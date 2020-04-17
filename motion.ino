@@ -2,7 +2,6 @@ int analogvalue = 0;
 //int led2 = D7; 
 
 void setup() {
-  // Subscribe to the integration response event
     pinMode(A0, INPUT);
     Particle.subscribe("hook-response/motion", myHandler, MY_DEVICES);
     //pinMode(led2, OUTPUT);
